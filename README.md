@@ -67,7 +67,7 @@ To run this project, please follow the steps below:
     venv\Scripts\activate
 
     #Linux/Mac
-    python -m venvvenv
+    python -m venv venv
     source venv/bin/activate
     ```
 
