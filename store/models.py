@@ -16,8 +16,8 @@ class Product:
         self.name = name
         self.description = description
         self.feature = feature
-        self.rating = float(rating) # Non-public (mutable)
-        self.price = float(price) # Non-public (mutable)
+        self.rating = float(rating)
+        self.price = float(price)
         self.category = category
 
     # Setter for new price of a product
