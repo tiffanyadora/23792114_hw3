@@ -1,0 +1,152 @@
+/* 
+* Store-specific stylesheet
+* Contains styles only used on the store.html page
+*/
+
+.breadcrumb ol {
+    list-style: none;
+}
+
+.breadcrumb li {
+    color: #666;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '/';
+    margin-left: var(--spacing-sm);
+    color: #ccc;
+}
+
+.breadcrumb a {
+    color: var(--arizona-blue);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--ua-red);
+}
+
+/* Product Details Layout */
+.product-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Product Information */
+
+.product-rating {
+    color: #f8c43a;
+    gap: 2px;
+}
+
+.product-rating span {
+    color: #666;
+}
+
+.product-price {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: var(--ua-red);
+    font-weight: 700;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.features-list i {
+    color: var(--ua-red);
+}
+
+/* Size Selector */
+
+.size-selector label {
+    display: block;
+    font-weight: 600;
+}
+
+.size-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    background: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.size-btn:hover {
+    border-color: var(--arizona-blue);
+}
+
+.size-btn.active {
+    border-color: var(--arizona-blue);
+    background-color: var(--arizona-blue);
+    color: white;
+}
+
+.add-to-cart {
+    width: 100%;
+}
+
+/* Suggested Products */
+
+.suggestion-card {
+    background-color: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.suggestion-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.suggestion-card h3 {
+    font-size: var(--font-md);
+}
+
+.suggestion-card .price {
+    color: var(--ua-red);
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .suggestions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .suggestion-card img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .suggestions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .size-options {
+        justify-content: center;
+    }
+
+    .breadcrumb {
+        font-size: var(--font-sm);
+    }
+}
