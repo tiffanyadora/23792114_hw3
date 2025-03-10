@@ -19,8 +19,6 @@ wildcatwear/
 |   |   ├── utility-styles.css  # Utility classes
 |   ├── images/                 # Images assets
 |
-├── staticfiles/    # Collected static files (from collectstatic)
-|
 ├── store/                      # Main application
 |   ├── migrations/             # Django migrations
 |   ├── templates/              # HTML templates
